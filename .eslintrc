@@ -1,0 +1,22 @@
+{
+  "extends": ["eslint:recommended", "airbnb-typescript/base", "airbnb-base"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "always" }],
+    "@typescript-eslint/semi": ["error", "never", { "beforeStatementContinuationChars": "always" }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "linebreak-style": "off"
+  }
+}
